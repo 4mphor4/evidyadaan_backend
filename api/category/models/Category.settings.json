@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "services": {
+      "collection": "service",
+      "via": "category"
+    },
+    "bookings": {
+      "collection": "booking",
+      "via": "category"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "service",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "date"
+    },
+    "created_by": {
+      "model": "user",
+      "via": "services",
+      "plugin": "users-permissions"
+    },
+    "category": {
+      "model": "category",
+      "via": "services"
+    }
+  }
+}

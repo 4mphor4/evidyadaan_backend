@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "booking",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "category": {
+      "model": "category",
+      "via": "bookings"
+    },
+    "requestor": {
+      "model": "user",
+      "via": "bookings_created",
+      "plugin": "users-permissions"
+    },
+    "acceptor": {
+      "model": "user",
+      "via": "bookings_accepted",
+      "plugin": "users-permissions"
+    },
+    "scheduled_on": {
+      "type": "date"
+    }
+  }
+}
