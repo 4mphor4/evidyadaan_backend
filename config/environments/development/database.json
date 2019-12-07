@@ -4,7 +4,7 @@
     "default": {
       "connector": "strapi-hook-mongoose",
       "settings": {
-        "uri": "mongodb+srv://test:UuqDfI54ZB9Dc6km@cluster0-h263q.mongodb.net/test?retryWrites=true&w=majority"
+        "uri": "${process.env.DATABASE_URI}"
       },
       "options": {
         "ssl": true
