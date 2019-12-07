@@ -4,15 +4,10 @@
     "default": {
       "connector": "strapi-hook-mongoose",
       "settings": {
-        "database": "vidyadaan",
-        "host": "127.0.0.1",
-        "srv": false,
-        "port": 27017,
-        "username": "",
-        "password": ""
+        "uri": "mongodb+srv://test:UuqDfI54ZB9Dc6km@cluster0-h263q.mongodb.net/test?retryWrites=true&w=majority"
       },
       "options": {
-        "authenticationDatabase": ""
+        "ssl": true
       }
     }
   }
